@@ -1,0 +1,130 @@
+*{
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1d1c1c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #13FF00;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#11ff005d;
+  }
+
+body{
+    background-color: #3f3f3f;
+    color: #fff;
+    overflow-x: hidden;
+    
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 60px;
+    padding-left: 700px;
+}
+.nav__link {
+   color: #fff;
+   font-weight: 700;
+   font-size: 18px;
+   position: relative;
+   transition: color 500ms ease-in-out;
+}
+.language {
+ color: #fff;
+ font-weight: 700;
+   font-size: 18px;
+   padding-right: 140px;
+   transition: color 500ms ease-in-out;
+   cursor: pointer;
+}
+
+
+
+.nav__link:hover {
+    color: #13FF00;
+}
+
+.nav__link::before{
+    content: "•";
+  position: absolute;
+  display: block;
+  width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 35px;
+    top: -20px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav__link:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+
+.nav__link1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    position: relative;
+    transition: color 500ms ease-in-out;
+ }
+
+ .nav__link1:hover {
+    color: #13FF00;
+}
+
+.nav__link1::before{
+    content: "•";
+  position: absolute;
+  display: block;
+  width: 100%;
+    height: 2px;
+    bottom: 0px;
+    left: 25px;
+    top: -20px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav__link1:hover::before{
+    transform: scaleX(1);
+}
+
+
+.language:hover {
+   color: #13FF00;
+}
+
+
+

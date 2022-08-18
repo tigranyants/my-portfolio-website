@@ -1,0 +1,117 @@
+.main {
+
+}
+.banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.banner__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 200px;
+    padding-top: 120px;
+}
+.banner__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.name__text {
+    font-size: 32px;
+    font-weight: 800;
+    color: #13FF00;
+    
+}
+.name__text__underline {
+    margin-left: 110px;
+    margin-top: -28px;
+    width: 300px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #13FF00;
+     border-bottom: 4px solid  #13FF00;
+}
+
+
+.banner__title {
+    position: relative;
+    font-size: 44px;
+    width: 604px;
+}
+
+.banner__title::after{
+    content: "Front-end Developer & UX&UI Designer";
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -90px;
+    color:  #3f3f3f;
+    -webkit-text-stroke: 0.5px white;
+    opacity: 0.2;
+}
+
+
+.banner__text {
+    color: #8F8F8F;
+    width: 500px;
+    animation: type 4s steps(80,end) forwards, blink .5s step-end infinite alternate;
+    flex-wrap: wrap;
+    white-space: nowrap ;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 16px;
+}
+.banner__links {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px;
+}
+.banner__link__circle {
+    width: 61px;
+    height: 61px;
+    background-color: #353535;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner__link svg path {
+    transition: fill 500ms;
+}
+.banner__right {
+    padding-right: 80px;
+    position: relative;
+    z-index: -1;
+}
+
+.banner__link__circle:hover .banner__link svg path{
+     fill: #13FF00;
+}
+
+
+@keyframes type {
+    0% {
+      width: 0;
+    }
+    1%, 99%{
+      border-right: 1px solid #13FF00;
+    }
+    100%{
+      border-right: none;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }

@@ -1,0 +1,228 @@
+.contact {
+    background-color: #161616;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 480px;
+    height: 600px;
+    background-color: #272727;
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
+}
+.contact__up {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 40px;
+    margin-left: 110px;
+}
+.contact__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+.contact__upLine {
+    height: 3px;
+    width: 230px;
+    background-color: #fff;
+}
+.contact__tel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    
+}
+
+.contact__text {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact__mail {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+.contact__location {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+}
+
+.contact__downLine {
+    height: 3px;
+    width: 318px;
+    background-color: #fff;
+    margin-top: 80px;
+}
+.contact__form {
+    background-color: #202020;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.contact__inputs {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+.contact__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.form__label {
+    font-size: 16px;
+    color: #C1C1C1;
+    font-weight: 500;
+}
+.name__input {
+    background-color: #343434;
+    width: 240px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color:  #13FF00;
+}
+.contact__email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.email__input {
+    background-color: #343434;
+    width: 300px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color:  #13FF00;
+}
+.contact__textarea {
+    width: 610px;
+    height: 240px;
+    background-color: #343434;
+    border: none;
+    line-height: 27px;
+    border-radius: 8px;
+    padding: 16px;
+    color:  #13FF00;
+}
+
+.contact__textarea__col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+
+.contact__btn {
+    margin-top: 20px;
+    background-color: #13FF00;
+    color: #202020;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 16px;
+    width: 640px;
+    cursor: pointer;
+    transform: translateY(-30%);
+    --background-color:  #13FF00;
+    --border-size: 2px;
+}
+
+  .contact__btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border: var(--border-size) solid var(--background-color);
+    border-radius: 8px;
+    transition: top, left, right, bottom, 100ms ease-in-out;
+  }
+  
+  .contact__btn:hover::before,
+  .contact__btn:focus::before {
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+  }
+
+
+
+.contact__tel path{
+    transition: 400ms stroke ease-in-out;
+}
+.contact__mail path{
+    transition: 400ms stroke ease-in-out;
+}
+.contact__location path{
+    transition: 400ms stroke ease-in-out;
+}
+
+
+.contact__tel:hover path{
+      stroke: #13FF00;
+}
+.contact__mail:hover path{
+    stroke: #13FF00;
+}
+.contact__location:hover path{
+    stroke: #13FF00;
+}
+
+.contact__tel:hover a{
+    color: #13FF00;
+}
+.contact__mail:hover a{
+  color: #13FF00;
+}
+.contact__location:hover p{
+  color: #13FF00;
+}
+
+.contact__tel a{
+    transition: 400ms color ease-in-out;
+}
+.contact__mail a{
+    transition: 400ms color ease-in-out;
+}
+.contact__location p{
+  transition: 400ms color ease-in-out;
+}
