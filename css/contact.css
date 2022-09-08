@@ -132,6 +132,7 @@
     border-radius: 8px;
     padding: 16px;
     color:  #13FF00;
+    resize: none;
 }
 
 .contact__textarea__col{
